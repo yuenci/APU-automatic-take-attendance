@@ -5,6 +5,7 @@ import script.config as config
 import script.bellRing as bellRing
 import sys
 
+
 if config.mode != "bell" and config.mode != "auto":
     print("Error: mode must be 'bell' or 'auto'.")
     exit()
@@ -26,13 +27,13 @@ while True:
 
     screenShot.window_capture(config.pictureName)
     code = qrscan.scan(config.pictureName)
-
     if code:
         print("code: ", code)
         if config.mode == "auto":
             seleniumWD.main(account[no][0], account[no][1].strip(), code)
         elif(config.mode == "bell"):
             if bellRing.status == False:
+                bellRing.showCode(code)
                 bellRing.playBell()
             else:
                 sys.exit()
