@@ -70,6 +70,40 @@ $ pip install -r requirements.txt
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+1. Bell mode (When QR code is detected, pop-up notificationand ring tone will be played)
+
+![](./src/autoDemo1.gif)
+
+2. Auto mode ()
+
+![](./src/autoDemo2.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Setting
+```py
+mode = "bell"
+# bell: Use music reminder
+# auto: Automatically take attendance
+
+belltimes = 1
+
+duration = 2 * 60 * 60
+# Running duration(sencods)
+
+log = False
+# True: show running log
+# False: hide running log
+
+interval = 5
+# every X sencods to check QR code
+# Note: Too short an interval will affect the performance of your computer.
+
+pictureName = "src/sc.jpg"
+
+
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
