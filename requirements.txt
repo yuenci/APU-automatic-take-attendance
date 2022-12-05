@@ -1,0 +1,3 @@
+playsound==1.2.2
+zxing==0.14
+pypiwin32==223
