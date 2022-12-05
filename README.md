@@ -2,7 +2,7 @@
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-<a name="readme-top"></a>
+`<a name="readme-top"></a>`
 
 <!-- PROJECT LOGO -->
 
@@ -31,8 +31,8 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-One day at McDonald's, I had a nice chat with my friends, and then we talked about take attendance. One of my friends said, If only there was something to take attendance automatically, then there was this project.🤣
 
+One day at McDonald's, I had a nice chat with my friends, and then we talked about take attendance. One of my friends said, If only there was something to take attendance automatically, then there was this project.🤣
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -41,6 +41,7 @@ One day at McDonald's, I had a nice chat with my friends, and then we talked abo
 * [playsound](https://github.com/TaylorSMarks/playsound)
 * [zxing](https://github.com/dlenski/python-zxing)
 * [pypiwin32](https://github.com/Googulator/pypiwin32)
+* [selenium](https://github.com/seleniumhq/selenium)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,14 +65,11 @@ $ pip install -r requirements.txt
    ```
 2. Run main.py
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,21 +80,17 @@ $ pip install -r requirements.txt
 - [ ] Automatically push code to wechat
 - [ ] Automatically push code to whatsapp
 
-
 See the [open issues](https://github.com/yuenci/APU-automatic-take-attendance/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-
-
 ## Authors
 
 <a href="https://github.com/yuenci" target="_blank" >
   <img src="https://github.com/yuenci/Laptop-Repair-Services-Management-System/blob/master/image/avatar-innis.png" alt="profile image" width="60px">
 </a>
-
 
 <!-- LICENSE -->
 
@@ -105,4 +99,3 @@ See the [open issues](https://github.com/yuenci/APU-automatic-take-attendance/is
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
