@@ -1,8 +1,8 @@
 import time
-import screenShot
-import qrscan
-import config
-import bellRing
+import script.screenShot as screenShot
+import script.qrscan as qrscan
+import script.config as config
+import script.bellRing as bellRing
 import sys
 
 if config.mode != "bell" and config.mode != "auto":
@@ -11,7 +11,7 @@ if config.mode != "bell" and config.mode != "auto":
 
 
 if config.mode == "auto":
-    import seleniumWD
+    import script.seleniumWD as seleniumWD
 
 
 with open("./account.txt") as f:
