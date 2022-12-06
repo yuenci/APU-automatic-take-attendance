@@ -25,7 +25,11 @@ while True:
     if no > config.duration:
         break
 
-    screenShot.window_capture(config.pictureName)
+    if config.screenMode == "window":
+        screenShot.getWindowShot()
+    elif config.screenMode == "screen":
+        screenShot.getScreenShot()
+
     code = qrscan.scan(config.pictureName)
     if code:
         print("code: ", code)

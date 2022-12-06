@@ -16,3 +16,11 @@ interval = 5
 # Note: Too short an interval will affect the performance of your computer.
 
 pictureName = "src/sc.jpg"
+
+screenMode = "window"
+# window: screenshot the window
+# screen: screenshot the screen
+
+#windowName = "Your course name"
+windowName = "SDM"
+# Set the name of the window you want to screenshot
