@@ -123,7 +123,9 @@ windowName = "Your course name"
 ```
 
 如何获取课程名称
+
 ![1670320975548](src/window.png)
+
 鼠标移动到team的任务栏图标，第二个窗口的名字就是我们所需要的，并不需要全部填进去，只需要起到标识作用即可，一般三四个字符就可。（举例，在此处可设置为： windowName="SDM"）
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
