@@ -116,7 +116,8 @@ pictureName = "src/sc.jpg"
 screenMode = "screen"
 # window: 截取窗口截图
 # screen: 截取屏幕截图
-# 两种的区别是：screen模式必须保持team在所有窗口前面显示，也就是要在屏幕上看到。window模式下，无需保持team在前台显示，只要不关闭会议的窗口，就可以持续监控到
+# 两种的区别是：screen模式必须保持team在所有窗口前面显示，也就是要在屏幕上看到。
+# window模式下，无需保持team在前台显示，只要不关闭会议的窗口，就可以持续监控到
 
 windowName = "Your course name"
 # 设置你当前课程的窗口名称
