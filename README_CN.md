@@ -2,7 +2,7 @@
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-`<a name="readme-top"></a>`
+<a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
 
@@ -12,10 +12,10 @@
     <img src="./src/slogan.gif" alt="Logo" width="200">
   </a>
 
-<h3 align="center">Automatic-take-attendance</h3>
+<h3 align="center">自动签到脚本</h3>
 
 <p align="center">
-    A script for APU taking attendance
+    一个用于APU签到系统的自动签到脚本
     <br />
     <a href="https://github.com/yuenci/APU-automatic-take-attendance/blob/master/README.md">EN Doc</a>
     ·
@@ -34,13 +34,13 @@
 
 ## About The Project
 
-One day at McDonald's, I had a nice chat with my friends, and then we talked about take attendance. One of my friends said, If only there was something to take attendance automatically, then there was this project.🤣
+有一天在麦当劳，我和我的朋友聊得很嗨，然后我们谈到了签到的话题。我的一个朋友说，如果有有东西可以自动签到就好了，那么就有这个项目了。🤣
 
-<h1>JUST FOR FUNNY, DO NOT REALLY UES IT</h1>
+<h1>整活向，别真用！</h1>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+### 构建
 
 * [playsound](https://github.com/TaylorSMarks/playsound)
 * [zxing](https://github.com/dlenski/python-zxing)
@@ -51,74 +51,80 @@ One day at McDonald's, I had a nice chat with my friends, and then we talked abo
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+## 开始
 
-### Prerequisites
 
-Need install [Python](https://www.python.org/) First.
+### 要求
 
+需要先安装 [Python](https://www.python.org/).
 
 ### Installation
 
-1. Clone the repo
+1. 克隆仓库到本地，或者直接下载
 
    ```sh
    git clone https://github.com/yuenci/APU-automatic-take-attendance
    ```
-2. Enter the following pip command in cmd to install the dependency
+2. 在有Python的环境中，cmd运行下面的命令安装依赖
 
    ```bash
    $ pip install -r requirements.txt
    ```
-3. Run main.py
+3. 运行 main.py 即可进行监控
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-1. Bell mode (When QR code is detected, pop-up notificationand ring tone will be played)
+1. 铃声模式（持续监控team窗口，发现QR code之后，发桌面通知+音乐提醒）
 
 ![](./src/autoDemo1.gif)
 
-2. Auto mode (Need to store your account & pwd in account.txt)
+2. 自动模式 (需要把账号密码填写在 account.txt里)
 
 ![](./src/autoDemo2.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Setting
+## 设置
+在 script/config.py 文件下
 
 ```py
 mode = "bell"
-# bell: Use music reminder
-# auto: Automatically take attendance
+# bell: 使用通知 + 音乐提醒
+# auto: 自动完成整个签到过程
 
 belltimes = 1
 
 duration = 2 * 60 * 60
-# sencods
+# 监控时长（单位：秒）
 
 log = False
-# True: show running log
-# False: hide running log
+# True: 显示运行日志
+# False: 不显示运行日志
 
 interval = 5
-# every X sencods to check QR code
-# Note: Too short an interval will affect the performance of your computer.
+# 每 X 秒检测一下窗口中是否出现了QR 码
+# 注意，如果间隔过小会影响到电脑性能
 
 pictureName = "src/sc.jpg"
 
-screenMode = "window"
-# window: screenshot the window
-# screen: screenshot the screen
+screenMode = "screen"
+# window: 截取窗口截图
+# screen: 截取屏幕截图
+# 两种的区别是：screen模式必须保持team在所有窗口前面显示，也就是要在屏幕上看到。window模式下，无需保持team在前台显示，只要不关闭会议的窗口，就可以持续监控到
 
 windowName = "Your course name"
-# Set the name of the window you want to screenshot
-
-
+# 设置你当前课程的窗口名称
 ```
+
+如何获取课程名称
+![1670320975548](src/window.png)
+鼠标移动到team的任务栏图标，第二个窗口的名字就是我们所需要的，并不需要全部填进去，只需要起到标识作用即可，一般三四个字符就可。（举例，在此处可设置为： windowName="SDM"）
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,10 +132,10 @@ windowName = "Your course name"
 
 ## Roadmap
 
-- [ ] Automatically push code to wechat
-- [ ] Automatically push code to whatsapp
+- [ ] 自动把 code 发送到微信
+- [ ] 自动推送code到WhatsApp
 
-See the [open issues](https://github.com/yuenci/APU-automatic-take-attendance/issues) for a full list of proposed features (and known issues).
+在 [这里](https://github.com/yuenci/APU-automatic-take-attendance/issues) 查看更多的功能或者提出你的需求。
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +151,6 @@ See the [open issues](https://github.com/yuenci/APU-automatic-take-attendance/is
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+采用GPL协议. 查看[LICENSE](./LICENSE) 获取更多信息.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

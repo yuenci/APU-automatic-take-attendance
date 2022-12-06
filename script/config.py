@@ -21,6 +21,5 @@ screenMode = "window"
 # window: screenshot the window
 # screen: screenshot the screen
 
-#windowName = "Your course name"
-windowName = "SDM"
+windowName = "Your course name"
 # Set the name of the window you want to screenshot
