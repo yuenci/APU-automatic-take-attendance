@@ -36,7 +36,7 @@
 
 One day at McDonald's, I had a nice chat with my friends, and then we talked about take attendance. One of my friends said, If only there was something to take attendance automatically, then there was this project.🤣
 
-<h1>JUST FOR FUNNY, DO NOT REALLY UES IT</h1>
+<h1>JUST FOR FUN, DO NOT REALLY UES IT.</h1>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
