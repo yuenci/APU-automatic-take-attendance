@@ -17,7 +17,7 @@ interval = 5
 
 pictureName = "src/sc.jpg"
 
-screenMode = "window"
+screenMode = "screen"
 # window: screenshot the window
 # screen: screenshot the screen
 
