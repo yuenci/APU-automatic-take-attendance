@@ -56,6 +56,7 @@ One day at McDonald's, I had a nice chat with my friends, and then we talked abo
 ### Prerequisites
 
 Need install [Python](https://www.python.org/) First.
+Need install [Java](https://www.oracle.com/my/java/technologies/downloads/) also.
 
 
 ### Installation
